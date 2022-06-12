@@ -5,6 +5,11 @@
   width: 100%;
   z-index: 20;
 
+  @media (max-width: 991px) {
+    position: fixed;
+    background-color: #19191B;
+  }
+
   &__container {
     display: flex;
     align-items: center;
