@@ -1,0 +1,16 @@
+// Сброс стилей
+@import "./normalize";
+
+// Базовые настойки стилей
+@import "./vars";
+@import "./settings";
+
+// Подключение мелких компонентов
+@import "./components/nav";
+
+// Подключения компонентов страницы
+@import "./components/header";
+@import "./components/hero";
+
+
+@import "./components/footer";
