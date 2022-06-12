@@ -13,12 +13,33 @@ window.addEventListener('DOMContentLoaded', function() {
     navList.prepend(navListDiv);
     navListDiv.prepend(navListImage);
     navListDiv.append(navListImageTitle);
-  } else {
-    navList.remove(navListDiv);
   }
 
   document.querySelector('.header__burger').addEventListener('click', function() {
     document.querySelector('.header__burger').classList.toggle('header__burger_active');
     document.querySelector('.nav__list').classList.toggle('nav__list_active');
+  });
+
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"').forEach(link => {
+    
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        const topOffset = document.querySelector('.nav__link').offsetHeight;
+        // const topOffset = 0; // если не нужен отступ сверху 
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
   });
 });
