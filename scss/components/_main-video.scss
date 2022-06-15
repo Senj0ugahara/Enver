@@ -1,0 +1,29 @@
+.main-video {
+  padding: 20px 0 130px;
+  &__text {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    @media(max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 580px;
+
+    @media(max-width: 991px) {
+      max-width: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

@@ -1,7 +1,6 @@
 .hero {
   position: relative;
   padding: 230px 0 130px;
-  overflow: hidden;
 
   @media (max-width: 991px) {
     padding: 130px 0;
@@ -34,7 +33,6 @@
     background: linear-gradient(180deg, rgba(251, 168, 28, 0.1066) 0%, rgba(224, 86, 136, 0.0615) 100%);
     filter: blur(300px);
     border-radius: 233.5px;
-    transform: rotate(65.71deg);
   }
 
   &__container {
@@ -133,7 +131,7 @@
 
       &_3 {
         left: -70px;
-        bottom: 0;
+        bottom: 40px;
         width: 106px;
         height: 121px;
         background-image: url(../images/hero/hero-icon2.svg);

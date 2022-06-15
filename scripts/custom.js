@@ -42,4 +42,19 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
   });
+
+  // main-video custom button "play"
+  const video = document.querySelector('.video-block__content');
+  const playButton = document.querySelector('.video-block__play');
+    // Event listener for the play/pause button
+    playButton.addEventListener('click', function() {
+      if (video.paused == true) {
+        video.play();
+        playButton.classList.add('video-block__play_active');
+      } else {
+        video.pause();
+        playButton.classList.remove('video-block__play_active');
+      }
+    });
+  
 });

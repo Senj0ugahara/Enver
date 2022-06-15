@@ -7,10 +7,12 @@
 
 // Подключение мелких компонентов
 @import "./components/nav";
+@import "./components/video-block";
 
 // Подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
+@import "./components/main-video";
 
 
 @import "./components/footer";
