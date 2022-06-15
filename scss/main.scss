@@ -8,11 +8,13 @@
 // Подключение мелких компонентов
 @import "./components/nav";
 @import "./components/video-block";
+@import "./components/service-list";
 
 // Подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
 @import "./components/main-video";
+@import "./components/service";
 
 
 @import "./components/footer";

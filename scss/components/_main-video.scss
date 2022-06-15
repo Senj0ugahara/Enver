@@ -1,5 +1,10 @@
 .main-video {
   padding: 20px 0 130px;
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+  }
+
   &__text {
     display: flex;
     align-items: flex-start;
@@ -16,7 +21,7 @@
     @media(max-width: 991px) {
       max-width: none;
       margin-bottom: 20px;
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -25,5 +30,10 @@
     line-height: 39px;
     letter-spacing: -0.656526px;
     color: rgba(255, 255, 255, 0.7);
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 }

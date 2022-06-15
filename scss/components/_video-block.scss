@@ -43,16 +43,18 @@
       left: 50%;
       width: 20px;
       height: 22px;
-      background-image: url(../images/play.svg);
+      background-image: url(../images/icons/play.svg);
       background-repeat: no-repeat;
       transform: translate(-50%, -50%);
     } 
 
     &_active {
+      opacity: .5;
+      
       &::before {
         width: 32px;
         height: 32px;
-        background-image: url(../images/pause.svg);
+        background-image: url(../images/icons/pause.svg);
       }
     }
 

@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
+  // header adaptive image
   if (window.innerWidth <= 991) {
     const navList = document.querySelector('.nav__list');
     let navListDiv = document.createElement('div');
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
     navListDiv.append(navListImageTitle);
   }
 
+  // burger 
   document.querySelector('.header__burger').addEventListener('click', function() {
     document.querySelector('.header__burger').classList.toggle('header__burger_active');
     document.querySelector('.nav__list').classList.toggle('nav__list_active');
@@ -46,15 +48,21 @@ window.addEventListener('DOMContentLoaded', function() {
   // main-video custom button "play"
   const video = document.querySelector('.video-block__content');
   const playButton = document.querySelector('.video-block__play');
-    // Event listener for the play/pause button
-    playButton.addEventListener('click', function() {
-      if (video.paused == true) {
-        video.play();
-        playButton.classList.add('video-block__play_active');
-      } else {
-        video.pause();
-        playButton.classList.remove('video-block__play_active');
-      }
-    });
+
+  // Event listener for the play/pause button
+  playButton.addEventListener('click', function() {
+    if (video.paused == true) {
+      video.play();
+      playButton.classList.add('video-block__play_active');
+    } else {
+      video.pause();
+      playButton.classList.remove('video-block__play_active');
+    }
+  });
   
+  // service mobile adaptive
+  const serviceTitle = document.querySelector('.service__title');
+  if (window.innerWidth <= 991) {
+    serviceTitle.innerHTML = 'The Service&nbsp;We Provide For You';
+  }
 });

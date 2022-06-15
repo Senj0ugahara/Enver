@@ -102,6 +102,13 @@ img {
   font-size: 80px;
   line-height: 84px;
   color: var(--light-color);
+
+  @media (max-width: 480px) {
+    max-width: 320px;
+    font-size: 42px;
+    line-height: 150%;
+    text-align: left;
+  }
 }
 
 .title {
@@ -110,6 +117,11 @@ img {
   font-size: 60px;
   line-height: 70px;
   color: var(--light-color);
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+    line-height: 150%;
+  }
 }
 
 // container adaptive
