@@ -66,3 +66,31 @@ window.addEventListener('DOMContentLoaded', function() {
     serviceTitle.innerHTML = 'The Service&nbsp;We Provide For You';
   }
 });
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    }
+  }
+});

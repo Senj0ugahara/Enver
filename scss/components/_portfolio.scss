@@ -1,0 +1,67 @@
+.portfolio {
+  position: relative;
+  padding: 50px 0 150px;
+
+  @media (max-width: 991px) {
+    padding: 60px 0;
+    
+    &::before, &::after {
+      display: none;
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 600px;
+    height: 100%;
+  }
+
+  &::before {
+    right: 0;
+    background: linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%);
+    filter: blur(300px);
+    border-radius: 233.5px;
+  }
+
+  &::after {
+    left: 0;
+    background: linear-gradient(180deg, rgba(251, 168, 28, 0.048) 0%, rgba(224, 86, 136, 0.018) 100%);
+    filter: blur(300px);
+    border-radius: 233.5px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    background-repeat: no-repeat;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    &_first {
+      top: 30px;
+      right: 0;
+      width: 51px;
+      height: 60px;
+      background-image: url(../images/hero/hero-icon3.svg);
+    }
+
+    &_second {
+      left: 0;
+      bottom: 0;
+      width: 99px;
+      height: 32px;
+      background-image: url(../images/hero/hero-icon1.svg);
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}

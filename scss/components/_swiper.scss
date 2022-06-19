@@ -1,0 +1,43 @@
+.swiper {
+  &-slide {
+    padding-bottom: 60px;
+
+    &_second {
+      margin-top: 60px;
+
+      @media (max-width: 991px) {
+        margin-top: 0;
+      }
+    }
+
+    &_third {
+      margin-top: 120px;
+
+      @media (max-width: 991px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__item {
+    padding: 24px;
+    background: #1E1E20;
+    border-radius: 14px;
+  }
+
+  &-pagination-bullet {
+    height: 8px;
+    background: #121213;
+    opacity: 1;
+
+    &-active {
+      width: 16px;
+      background: #5454D4;
+      border-radius: 10px;
+
+      @media (max-width: 991px) {
+        width: 8px;
+      }
+    }
+  }
+}

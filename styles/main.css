@@ -864,6 +864,54 @@ img {
   }
 }
 
+.swiper-slide {
+  padding-bottom: 60px;
+}
+
+.swiper-slide_second {
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  .swiper-slide_second {
+    margin-top: 0;
+  }
+}
+
+.swiper-slide_third {
+  margin-top: 120px;
+}
+
+@media (max-width: 991px) {
+  .swiper-slide_third {
+    margin-top: 0;
+  }
+}
+
+.swiper__item {
+  padding: 24px;
+  background: #1E1E20;
+  border-radius: 14px;
+}
+
+.swiper-pagination-bullet {
+  height: 8px;
+  background: #121213;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  background: #5454D4;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .swiper-pagination-bullet-active {
+    width: 8px;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1357,4 +1405,79 @@ img {
   .service__list {
     padding-bottom: 0;
   }
+}
+
+.portfolio {
+  position: relative;
+  padding: 50px 0 150px;
+}
+
+@media (max-width: 991px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio::before, .portfolio::after {
+    display: none;
+  }
+}
+
+.portfolio::before, .portfolio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 600px;
+  height: 100%;
+}
+
+.portfolio::before {
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 84, 212, 0.2)), to(rgba(84, 84, 212, 0.084)));
+  background: linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  border-radius: 233.5px;
+}
+
+.portfolio::after {
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 168, 28, 0.048)), to(rgba(224, 86, 136, 0.018)));
+  background: linear-gradient(180deg, rgba(251, 168, 28, 0.048) 0%, rgba(224, 86, 136, 0.018) 100%);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  border-radius: 233.5px;
+}
+
+.portfolio__container {
+  position: relative;
+}
+
+.portfolio__icon {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  .portfolio__icon {
+    display: none;
+  }
+}
+
+.portfolio__icon_first {
+  top: 30px;
+  right: 0;
+  width: 51px;
+  height: 60px;
+  background-image: url(../images/hero/hero-icon3.svg);
+}
+
+.portfolio__icon_second {
+  left: 0;
+  bottom: 0;
+  width: 99px;
+  height: 32px;
+  background-image: url(../images/hero/hero-icon1.svg);
+}
+
+.portfolio__title {
+  margin-bottom: 50px;
 }

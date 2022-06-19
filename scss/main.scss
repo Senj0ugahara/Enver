@@ -1,5 +1,5 @@
-// Сброс стилей
-@import "./normalize";
+// vendor
+@import "./vendor";
 
 // Базовые настойки стилей
 @import "./vars";
@@ -9,12 +9,14 @@
 @import "./components/nav";
 @import "./components/video-block";
 @import "./components/service-list";
+@import "./components/swiper";
 
 // Подключения компонентов страницы
 @import "./components/header";
 @import "./components/hero";
 @import "./components/main-video";
 @import "./components/service";
+@import "./components/portfolio";
 
 
 @import "./components/footer";
