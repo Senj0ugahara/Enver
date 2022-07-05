@@ -1,7 +1,7 @@
 .main-video {
   padding: 20px 0 130px;
 
-  @media (max-width: 991px) {
+  @media (max-width: 991.98px) {
     padding: 60px 0;
   }
 
@@ -10,7 +10,7 @@
     align-items: flex-start;
     margin-bottom: 50px;
 
-    @media(max-width: 991px) {
+    @media(max-width: 991.98px) {
       flex-direction: column;
     }
   }
@@ -18,7 +18,7 @@
   &__title {
     max-width: 580px;
 
-    @media(max-width: 991px) {
+    @media(max-width: 991.98px) {
       max-width: none;
       margin-bottom: 20px;
       text-align: left;
