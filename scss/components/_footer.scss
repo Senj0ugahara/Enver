@@ -72,5 +72,11 @@
     font-size: 18px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.7);
+
+    &:hover {
+      font-weight: 600;
+      line-height: 25px;
+      color: #5454D4;
+    }
   }
 }

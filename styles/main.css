@@ -413,6 +413,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
+  max-width: var(--container-width);
 }
 
 .btn-reset {
@@ -514,8 +515,7 @@ img {
 
 @media (min-width: 480px) {
   .container {
-    max-width: none;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1650,4 +1650,10 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-list__link:hover {
+  font-weight: 600;
+  line-height: 25px;
+  color: #5454D4;
 }

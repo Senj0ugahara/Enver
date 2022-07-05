@@ -31,6 +31,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
+  max-width: var(--container-width);
 }
 
 .btn-reset {
@@ -127,8 +128,7 @@ img {
 // container adaptive
 @media (min-width: 480px) {
 	.container {
-    max-width: none;
-    width: 100%;
+    max-width: 100%;
 	}
 }
 
